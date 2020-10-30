@@ -32,17 +32,15 @@ const start = () =>{
     }
     else{
       type_text = text.value.trim();
+      play = false;
+      btn.innerText = 'START AGAIN';
+      text.value = '';
+      text.classList.toggle('d-none');
       if(type_text === new_word){
-         play = false;
          msg.innerText = `Awesome It's correct. It is " ${new_word} ". `;
-         btn.innerText = 'START AGAIN';
-         text.value = ' ';
-         text.classList.toggle('d-none');
       }
       else{
         msg.innerText =`Sorry. It's not correct. It is " ${new_word} ".`;
-        text.value = ' ';
-        text.classList.toggle('d-none');
       }
     }
     
