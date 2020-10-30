@@ -42,6 +42,7 @@ const start = () =>{
       else{
         msg.innerText =`Sorry. It's not correct. It is " ${new_word} ".`;
         text.value = ' ';
+        text.classList.toggle('d-none');
       }
     }
     
